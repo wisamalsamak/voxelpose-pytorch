@@ -30,7 +30,8 @@ from utils.utils import save_checkpoint, load_checkpoint, load_model_state
 from utils.utils import load_backbone_panoptic
 import dataset
 import models
-
+import random
+random.seed(10)
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Train keypoints network')
